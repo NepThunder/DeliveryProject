@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>GDS-Become a Provider</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="BAC.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <!-- for JQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <div class="root">
+        <nav>
+            <div class="logo"><span id="brand">GDS</span><span id="logo-span"></span></div>
+            <input type="checkbox" id="click">
+            <label for="click" class="menu-btn">
+                <i class="fas fa-bars"></i>
+            </label>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Signup-in.html">Login/Sign up</a></li>
+                <li><a class="active" href="#">Become a Provider</a></li>
+                <li><a href="OD.html">Order a Delivery</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+        <div class="form-box" id="form-box">
+            <div class="RegisterForDeliveryMan">
+                <p class="deliveryMan">Want to earn $Money?<br> Register for the Job<br>Enter the Details below</p>
+            </div>
+            <div>
+            <form id="first-phase" class="input-group">
+                <input type="text" class="input-field" placeholder="First Name" required>
+                <input type="text" class="input-field" placeholder="Middle Name (optional)">
+                <input type="text" class="input-field" placeholder="Last Name" required>
+                <input type="text" class="input-field" placeholder="City" required>
+                <input type="text" class="input-field" placeholder="1st Address Line" required>
+                <input type="text" class="input-field" placeholder="2nd Address Line (optional)">
+                <input type="tel" class="input-field" placeholder="Phone number" maxlength="10">
+                <input type="text" class="input-field" placeholder="User-Name" maxlength="15">
+                <!-- <button type="button" onclick="secondPhase()" class="submit-btn-1">Next <i
+                        class='fas fa-arrow-right'></i></button>
+            </form>
+            <form id="Second-phase" class="input-group"> -->
+                <input type="text" class="input-field" placeholder="Driving-License-ID-Number" maxlength="16"required>
+                <input type="text" class="input-field" placeholder="Aadhar-ID-Number" required maxlength="12">
+                <input type="email" class="input-field" id="Email" placeholder="Email-id" required>
+                <input type="email" class="input-field" id="confirmEmail" placeholder="Confirm Email-id" required>
+                <input type="password" class="input-field" id="password" placeholder="Enter a Password" minlength="8"  required>
+                <div class="showPassword">
+                    <input type="checkbox" onclick="showPassword()" id="password"><span> Show Password</span>
+                </div>
+                <input type="password" class="input-field" minlength="8" id="confirmPassword" placeholder="Confirm Password"required>
+                <input type="checkbox" class="check-box"><span> I agree to <a href="https://www.termsandconditionsgenerator.com/live.php?token=NdlD2p8fYAMa6OlTiGU8PoXwmj1wOMPX"target="_blank">Terms and conditions</a></span>
+                <button type="submit" class="submit-btn-2">Submit</button>
+            </form>
+        </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="js.js">
+    </script>
+</body>
+
+</html>

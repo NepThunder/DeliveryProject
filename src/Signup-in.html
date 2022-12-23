@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Sign in/Sign up</title>
+    <link rel="stylesheet" href="Signup-in.css" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <!-- For svg icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+</head>
+
+<body>
+    <div class="register" id="register-form">
+        <nav>
+            <div class="logo"><span id="brand">GDS</span><span id="logo-span"></span></div>
+            <input type="checkbox" id="click">
+            <label for="click" class="menu-btn">
+                <i class="fas fa-bars"></i>
+            </label>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a class="active" href="Signup-in.html">Login/Sign up</a></li>
+                <li><a href="bac.html">Become a Provider</a></li>
+                <li><a href="OD.html">Order a Delivery</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+        <div class="form-box" id="form-box">
+            <div class="button-box">
+                <div id="btn"></div>
+                <button type="button" class="toggle-btn" onclick="login()"><b>Sign in</b></button>
+                <button type="button" class="toggle-btn" onclick="register()"><b>Sign up</b></button>
+            </div>
+            <!-- <div class="social-icon"></div> -->
+            <form id="Sign-in" class="input-group">
+                <input type="text" class="input-field" placeholder="Username" required>
+                <input type="text" class="input-field" placeholder="Password" required>
+                <input type="checkbox" class="check-box"><span>Remember me</span><br>
+                <a href="#"  target="_self"><span id="f-pass"> Forgot Password?</span></a>
+                <button type="submit" class="submit-btn"><a href="OD.html" style="color: black;">Sign in</a></button>
+            </form>
+            <form id="Sign-up" class="input-group">
+                <input type="text" class="input-field" placeholder="First Name" required>
+                <input type="text" class="input-field" placeholder="Middle Name (optional)" >
+                <input type="text" class="input-field" placeholder="Last Name" required>
+                <input type="text" class="input-field" placeholder="City" required>
+                <input type="text" class="input-field" placeholder="Address" required>
+                <input type="text" class="input-field" placeholder="User-Name">
+                <input type="text" class="input-field" placeholder="Email-id" required>
+                <input type="text" class="input-field" placeholder="Confirm Email-id" required>
+                <input type="password" class="input-field" placeholder="Enter Password" required>
+                <input type="password" class="input-field" placeholder="Confirm Password">
+                <input type="checkbox" class="check-box"><span> I agree to <a target="_blank" href="https://www.termsandconditionsgenerator.com/live.php?token=NdlD2p8fYAMa6OlTiGU8PoXwmj1wOMPX" >Terms and conditions</a></span><br>
+                <button type="submit" class="submit-btn">Sign up</button>
+            </form>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="js.js"></script>
+</body>
+</html>
